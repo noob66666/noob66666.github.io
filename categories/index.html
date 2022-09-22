@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>分类 | Hexo</title>
   <meta name="author" content="John Doe" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -17,8 +17,8 @@
     <meta name="keywords" content="" />
   
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -125,221 +125,76 @@
 
         
 
-            <!-- Breadcrumb for tag & category page -->
+            <style>
+  .categories ul {
+    list-style: none;
+  }
 
+  .categories .category-list-item {
+    position: relative;
+    padding-top: 20px;
+  }
 
+  .categories .category-list-item .category-list-link::before {
+    content: " ";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    width: 8px;
+    height: 8px;
+    background: #bbb;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+  }
 
+  .categories .category-list-item .category-list-link:hover::before {
+    background: #222;
+  }
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/09/22/HTML%E6%B3%A8%E9%87%8A%E4%B8%80/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2022/09/22/HTML%E6%B3%A8%E9%87%8A%E4%B8%80/" itemprop="mainEntityOfPage"><span itemprop="name headline">HTML注释一</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                注释1标签定义及使用说明1.&lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置，处于  标签之前。2.&lt;!DOCTYPE&gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-09-22T10:07:19.052Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-09-22</a>
-                        </time>
-                        <a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/09/22/HTML%E6%B3%A8%E9%87%8A%E4%B8%80/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
+  a {
+    color:#666;
+  }
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/09/20/%E4%BE%8B%E9%A2%98%E4%B8%80/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2022/09/20/%E4%BE%8B%E9%A2%98%E4%B8%80/" itemprop="mainEntityOfPage"><span itemprop="name headline">例题一</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                #include&lt;stdio.h&gt;         &#x2F;* 引用标准输出库函数*&#x2F;#incluede&lt;stdlip.h&gt;     &#x2F;* 引用标准lib库函数*&#x2F;void m...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-09-20T14:17:48.841Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-09-20</a>
-                        </time>
-                        <a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/09/20/%E4%BE%8B%E9%A2%98%E4%B8%80/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
+  .categories .category-list-item .category-list-link {
+    position: relative;
+    margin-left: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: inherit;
+  }
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/09/20/%E6%B2%81%E5%9B%AD%E6%98%A5%E9%95%BF%E6%B2%99/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2022/09/20/%E6%B2%81%E5%9B%AD%E6%98%A5%E9%95%BF%E6%B2%99/" itemprop="mainEntityOfPage"><span itemprop="name headline">诗一首</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                沁园春·长沙独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游，忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。指点江山，...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-09-19T16:48:24.631Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-09-20</a>
-                        </time>
-                        <a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/09/20/%E6%B2%81%E5%9B%AD%E6%98%A5%E9%95%BF%E6%B2%99/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
+  .categories .category-list-item .category-list-link::after {
+    font-family: fontawesome;
+    opacity: 0;
+    content: "\f138";
+    margin-left: 12px;
+    color: #00a7e0;
+    transition: opacity .3s ease-in-out;
+  }
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/09/19/hello-world/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2022/09/19/hello-world/" itemprop="mainEntityOfPage"><span itemprop="name headline">Hello World</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-09-19T10:22:21.030Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-09-19</a>
-                        </time>
-                        <a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/09/19/hello-world/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
+  .categories .category-list-item .category-list-link:hover::after {
+    opacity: 100%;
+  }
+</style>
+<article>
+  <div class="kratos-hentry kratos-post-inner clearfix">
+    <div class="kratos-post-content">
+      <h2 class="title-h2 text-center">
+        分类目录
+      </h2>
+      <div style="margin-left: 2em;">
+        <h3 class="archive-page-counter">
+          当前共有 0 种分类 (゜-゜)つロ 干杯~
+        </h3>
+        <div class="categories">
+          
+        </div>
+      </div>
     </div>
-
-
+  </div>
+</article>
 
         
 
